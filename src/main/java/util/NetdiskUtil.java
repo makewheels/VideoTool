@@ -18,7 +18,7 @@ public class NetdiskUtil {
      */
     public static void uploadSingleFile(File localFile, String netdiskPath) throws IOException {
         //使用bypy上传
-        RuntimeUtil.execute("bypy upload  " + localFile.getPath() + netdiskPath);
+        RuntimeUtil.execute("bypy upload  " + localFile.getPath() + " " + netdiskPath);
     }
 
 }
